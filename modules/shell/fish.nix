@@ -1,7 +1,8 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   programs.fish = {
     enable = true;
-    
+
     interactiveShellInit = ''
       set -g fish_greeting ""
     '';
@@ -9,12 +10,14 @@
     shellAliases = {
       nix-switch = "sudo nixos-rebuild switch --flake ~/nixos-config#nixos";
       nix-clean = "sudo nix-collect-garbage -d";
-      
+
+      add-sw = "git add . && nix-switch";
+
       ls = "eza --icons";
       ll = "eza -l --icons";
       cat = "bat";
 
-      pn = "pnpm"
+      pn = "pnpm";
     };
 
     plugins = [
@@ -30,7 +33,7 @@
   };
 
   home.packages = with pkgs; [
-    eza 
+    eza
     bat
     fzf
     zoxide

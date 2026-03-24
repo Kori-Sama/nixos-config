@@ -1,14 +1,18 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   home.packages = with pkgs; [
     gnumake
     pkg-config
-    
+
     gcc
     python3
     nodejs
 
     uv
     pnpm
+
+    ruff
+    nixfmt
   ];
 
   programs.direnv = {

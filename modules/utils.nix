@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   programs.btop = {
     enable = true;
     settings = {
@@ -6,10 +7,11 @@
       theme_background = true;
       vim_keys = true;
     };
-  };  
+  };
 
   home.packages = with pkgs; [
     duf
     dust
+    fd
   ];
 }
