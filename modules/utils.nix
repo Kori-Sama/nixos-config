@@ -13,5 +13,6 @@
     duf
     dust
     fd
+    yazi
   ];
 }
