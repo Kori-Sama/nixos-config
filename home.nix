@@ -9,6 +9,7 @@
     ./modules/shell
     ./modules/nvim/nvim.nix
     ./modules/git.nix
+    ./modules/utils.nix
   ];
 
   home.packages = with pkgs; [
