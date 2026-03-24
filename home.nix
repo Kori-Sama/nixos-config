@@ -10,6 +10,7 @@
     ./modules/nvim/nvim.nix
     ./modules/git.nix
     ./modules/utils.nix
+    ./modules/dev
   ];
 
   home.packages = with pkgs; [

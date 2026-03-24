@@ -13,6 +13,8 @@
       ls = "eza --icons";
       ll = "eza -l --icons";
       cat = "bat";
+
+      pn = "pnpm"
     };
 
     plugins = [
