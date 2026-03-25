@@ -11,8 +11,11 @@
     uv
     pnpm
 
+    nil
     ruff
+    ty
     nixfmt
+    lua-language-server
   ];
 
   programs.direnv = {
